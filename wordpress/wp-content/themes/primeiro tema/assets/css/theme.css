@@ -17,3 +17,21 @@ body
 {
     display: inline;
 }
+
+.container
+{
+    width: 70%;
+    float: left;
+    border: none;
+}
+sidebar
+{
+    width: 30%;
+    float: left;
+    border: none;
+}
+
+.widget_title
+{
+    color:blue;
+}
