@@ -4,6 +4,7 @@ include get_template_directory().'/include/op_style.php';
 include get_template_directory().'/include/op_script.php';
 include get_template_directory().'/include/op_menu.php';
 include get_template_directory().'/include/op_sidebar.php';
+include get_template_directory().'/include/op_posts.php';
 
 
 //a linha abaixo chama o hook e depois a função)
@@ -12,3 +13,5 @@ add_action('wp_enqueue_scripts','op_theme_styles');
 add_action('wp_enqueue_scripts','op_theme_js');
 add_action('after_setup_theme','op_theme_menu');//ativa o suporte ao menu
 add_action('widgets_init','op_theme_sidebar'); //ativar o sidebar
+add_action('after_setup_theme','op_theme_posts');//ativa o suporte ao post
+
